@@ -14,6 +14,11 @@ html, body, #inicio {
     height: 100%; /* Garante que o corpo ocupe 100% da altura */
 }
 
+h1 {
+    color: white;
+    
+}
+
 /* --------------------------------- CABEÇALHO--------------------------------- */
 
 /* --- Barra navegação--- */
@@ -124,7 +129,7 @@ nav.navbar-transparente { /* Fundo */
     background-attachment: fixed;
     padding-top: 0; /* Remova o espaçamento interno superior */
     padding-bottom: 20px;
-    max-height: 620px;
+    max-height: 700px;
     border: 2px solid rgb(220, 219, 252);
 
 }
@@ -135,7 +140,9 @@ nav.navbar-transparente { /* Fundo */
     margin: 0; /* Remove margens */
     padding: 0; /* Remove o padding */
     position: relative; /* Para manter dentro de #skills */
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
 }
 
 /* Grid container com 3 colunas */
@@ -147,7 +154,7 @@ nav.navbar-transparente { /* Fundo */
     justify-content: center; /* Centraliza o conteúdo */
     padding: 0; /* Remove qualquer padding extra */
     margin: 0 auto; /* Centraliza o grid no contêiner */
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     width: fit-content; /* A largura se ajusta ao conteúdo do grid */
 }
 
@@ -157,13 +164,17 @@ nav.navbar-transparente { /* Fundo */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220px; /* Largura ajustada para 220px */
+    width: 250px; /* Largura ajustada para 220px */
     height: 120px;
     padding: 0px;
     border-radius: 10px;
     transition: 0.3s;
     border: 4px solid transparent;
     box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.837);
+}
+
+.card p {
+    color: white;
 }
 
 .card:hover {
@@ -209,6 +220,7 @@ nav.navbar-transparente { /* Fundo */
     top: 0; /* Alinha o título à borda superior do contêiner */
     left: 0; /* Alinha o título à borda esquerda do contêiner */
     margin-bottom: 20px; /* Mantém a margem inferior, se desejada */
+    margin-top: 40px;
     width: 100%; /* Faz o título ocupar toda a largura do contêiner */
 
 }
@@ -225,13 +237,15 @@ nav.navbar-transparente { /* Fundo */
     transform: translate(-50%, -50%); /* Centraliza a grid em relação ao seu próprio centro */
 }
 
+
+
 .projetos-card {
     background: #efecec71;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 160px; /* Largura ajustada para caber dentro dos 800px */
-    height: 160px; /* Altura ajustada */
+    width: 200px; /* Largura ajustada para caber dentro dos 800px */
+    height: 200px; /* Altura ajustada */
     padding: 0px;
     border-radius: 50%; /* Formato circular */
     transition: 0.3s;
@@ -247,8 +261,8 @@ nav.navbar-transparente { /* Fundo */
 }
 
 .projetos-imagem {
-    max-height: 160px;
-    margin-bottom: 160x; /* Espaço de 20px entre a imagem e o texto */
+    max-height: 205px;
+    margin-bottom: 205x; /* Espaço de 20px entre a imagem e o texto */
 }
 
 /* --------------------------------- RODAPÉ --------------------------------- */
