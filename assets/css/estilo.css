@@ -1,0 +1,358 @@
+/* --------------------------------- LAYOUT --------------------------------- */
+
+body {
+
+    background: url(../imagens/fundo_1.jpg);
+    background-attachment: fixed;
+    font: 500 100% "Roboto", Helvetica, Arial, Verdana, sans-serif;
+
+}
+
+html, body, #inicio {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    height: 100%; /* Garante que o corpo ocupe 100% da altura */
+}
+
+/* --------------------------------- CABEÇALHO--------------------------------- */
+
+/* --- Barra navegação--- */
+nav.navbar-transparente { /* Fundo */
+    padding: 0px 0px;
+    background-color: rgba(255, 215, 0, 0.9);
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link { /* Links */
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {  /* Links sob mouse */
+    color: white;
+}
+
+.navbar-light .navbar-toggler { /* Botão menu */
+    border-color: white;
+    margin-right: 18%;
+}
+
+.navbar-collapse { /* Menu em modo toggle */
+    margin-left: 15px 
+}
+
+.divisor {
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, black, black, transparent);
+}
+
+/* --- Logo--- */
+.navbar-light .navbar-brand {  /* Texto */
+
+    border-right: 2px solid ;
+    border-image: linear-gradient(to bottom, transparent, black, black, transparent) 1 100%;
+    width: 30ch;  /* Define a largura do elemento em 28 caracteres */
+    white-space: nowrap;  /* Impede a quebra de linha dentro do elemento */
+    text-decoration: underline;
+    text-decoration-thickness: 1px; /* Define a espessura do sublinhado */
+    text-underline-offset: 4px; /* Adiciona espaço entre o texto e o sublinhado */
+    padding-left: 15px; /* Ajuste o valor conforme necessário */
+    font-size: 15px;
+}
+
+.navbar-brand:hover {
+    filter: brightness(100%) saturate(0%); /* Deixa a imagem branca */
+}
+
+/* --------------------------------- INICIO --------------------------------- */
+
+#inicio {
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+.avatar, .bio {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Tamanho do texto */
+    color: #fff; /* Cor do texto */   
+}
+
+.avatar {
+    display: flex;
+}
+
+.avatar .imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto /* posiciona a imagem */
+}
+
+.bio { 
+    color: white; /* Cor do texto em preto */
+    padding: 10px; /* Espaço interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total da caixa */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse a caixa */
+    width: 72%; /* Garante que a largura seja a total permitida */
+
+}
+
+#fundo {
+    background: url(../imagens/fundo_2.jpg);
+    background-size: cover; /* Expande a imagem para cobrir todo o contêiner */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: auto; /* Ajusta a largura ao conteúdo */
+    max-width: 100%; /* Garante que o contêiner não ultrapasse a largura da tela */
+    height: auto; /* Ajusta a altura ao conteúdo */
+    border-radius: 25px; /* Define o raio dos cantos arredondados */    overflow: hidden; /* Garante que a imagem não ultrapasse os cantos arredondados */
+    padding: 20px; /* Adiciona algum espaço interno para o texto não encostar nas bordas */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total da caixa */
+    border: 2px solid rgb(220, 219, 252);
+}
+
+
+/* --------------------------------- SKILLS --------------------------------- */
+
+#skills {
+    background: url(../imagens/bck.jpg);
+    background-attachment: fixed;
+    padding-top: 0; /* Remova o espaçamento interno superior */
+    padding-bottom: 20px;
+    max-height: 620px;
+    border: 2px solid rgb(220, 219, 252);
+
+}
+
+/* Centraliza o título */
+.skills-titulo {
+    text-align: center;
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove o padding */
+    position: relative; /* Para manter dentro de #skills */
+    margin-bottom: 0px;
+}
+
+/* Grid container com 3 colunas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Colunas com largura automática conforme o conteúdo */
+    column-gap: 100px; /* Espaçamento horizontal entre colunas */
+    row-gap: 30px; /* Espaçamento vertical entre as linhas */
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 0; /* Remove qualquer padding extra */
+    margin: 0 auto; /* Centraliza o grid no contêiner */
+    margin-bottom: 40px;
+    width: fit-content; /* A largura se ajusta ao conteúdo do grid */
+}
+
+/* Cada card */
+.card {
+    background: #efecec71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px; /* Largura ajustada para 220px */
+    height: 120px;
+    padding: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 4px solid transparent;
+    box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.837);
+}
+
+.card:hover {
+    border: 4px solid white; /* Muda a borda para branca */
+}
+
+.skills-conteudo {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e o texto em uma coluna */
+    align-items: center; /* Centraliza a imagem e o texto horizontalmente */
+}
+
+.skills-imagem {
+    max-height: 70px;
+    margin-bottom: 10px; /* Espaço de 20px entre a imagem e o texto */
+}
+
+.descricao {
+    margin-top: 0; /* Remove qualquer margem superior */
+    margin-bottom: 1px;
+    position: static; /* Remove o absolute para usar o layout flex */
+}
+
+/* --------------------------------- PROJETOS --------------------------------- */
+
+#projetos {
+    max-height: 620px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px 0; /* Adiciona um pequeno padding para evitar que o conteúdo encoste nas bordas */
+
+    position: relative; /* Define o contexto para o posicionamento absoluto do título */
+}
+
+.projeto-titulo {
+    text-align: center;
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove o padding */
+    position: absolute; /* Posiciona o título em relação ao contêiner pai */
+    top: 0; /* Alinha o título à borda superior do contêiner */
+    left: 0; /* Alinha o título à borda esquerda do contêiner */
+    margin-bottom: 20px; /* Mantém a margem inferior, se desejada */
+    width: 100%; /* Faz o título ocupar toda a largura do contêiner */
+
+}
+
+.grid-container-projetos { 
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* 3 colunas */
+    gap: 20px; /* Espaçamento ajustado entre os cards */
+    column-gap: 150px; /* Espaçamento horizontal entre colunas */
+
+    position: absolute; /* Permite o posicionamento absoluto */
+    top: 50%; /* Move a grid para 50% da altura do contêiner pai */
+    left: 50%; /* Move a grid para 50% da largura do contêiner pai */
+    transform: translate(-50%, -50%); /* Centraliza a grid em relação ao seu próprio centro */
+}
+
+.projetos-card {
+    background: #efecec71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px; /* Largura ajustada para caber dentro dos 800px */
+    height: 160px; /* Altura ajustada */
+    padding: 0px;
+    border-radius: 50%; /* Formato circular */
+    transition: 0.3s;
+    border: 4px solid transparent;
+    box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.837);
+    cursor: pointer;
+    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas */
+    border-color:rgb(220, 219, 252);
+}
+
+.projetos-card:hover {
+    border: 4px solid white; /* Muda a borda para branca */
+}
+
+.projetos-imagem {
+    max-height: 160px;
+    margin-bottom: 160x; /* Espaço de 20px entre a imagem e o texto */
+}
+
+/* --------------------------------- RODAPÉ --------------------------------- */
+#rodape {
+    width: 100%;
+}
+
+/* --------------------------------- MODAL --------------------------------- */
+
+.modal {
+    display: none; /* O modal estará escondido por padrão */
+    position: fixed; /* Fica fixo em relação à janela, não ao conteúdo da página */
+    z-index: 1; /* Garante que o modal apareça sobre outros elementos */
+    left: 0px;
+    top: -7px;
+}
+
+.modal-conteudo {
+    background-color: white; /* Cor de fundo do conteúdo */
+    margin: 100px auto 0; /* Centraliza o modal e adiciona espaço acima */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: fit-content; /* Largura do modal se ajusta ao conteúdo */
+    max-width: 90%; /* Limita a largura máxima do modal */
+    max-height: 90%; /* Limita a altura máxima do modal */
+    overflow-y: auto; /* Adiciona rolagem se o conteúdo exceder a altura */
+}
+
+.modal-galeria {
+    display: grid; /* Usando Grid para organizar os itens */
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais */
+    gap: 40px 0px/* Espaçamento entre os itens */
+}
+
+.modal-imagem {
+    display: flex; /* Usando Flexbox para alinhar a imagem e a descrição ao lado */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: flex-start; /* Alinha os itens ao início do contêiner */
+}
+
+.modal-imagem img {
+    max-width: 40px; /* Define um tamanho fixo para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    margin-right: 10px; /* Espaçamento entre a imagem e a descrição */
+    margin-top: -20px;
+}
+
+.curriculo-link {
+    color: inherit; /* Herdar a cor do elemento pai (padrão do parágrafo) */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.curriculo-link:hover {
+    color: #000000; /* Exemplo: altera a cor quando o link é sobreposto (hover) */
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse, se desejar */
+}
+
+/* --------------------------------- MEDIA QUERYS --------------------------------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	h1 {
+		font-size: 2em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}	
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+	h1 {
+		font-size: 6em;
+	}
+}

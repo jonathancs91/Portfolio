@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilo.css"> 
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4d73367a03.js" crossorigin="anonymous"></script>
+
+    <title>Jonathan Costa</title>
+    <link rel="icon" href="assets/imagens/J-v.png">
+
+</head>
+<body>
+    <header id="cabecalho"><!-- Início Cabeçalho-->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo e título -->
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="assets/imagens/J-v.png" width="40" alt="Logo">ONATHAN COSTA WEB DEV
+                </a>
+
+                <!-- Botão toggle e barra de navegação -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link" id="sobre-mim-link">Sobre mim</a>
+                        </li>
+                        <li class="nav-item divisor"></li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Linguagens</a>
+                        </li>
+                        <li class="nav-item divisor"></li>
+                        <li class="nav-item">
+                            <a href="#projetos" class="nav-link">Projetos</a>
+                        </li>
+                        <li class="nav-item divisor"></li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link openModalLink">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Fim Cabeçalho-->
+
+    <section id="inicio"><!-- Início Bio -->
+        <div class="container">
+            <div id="fundo" class="d-flex">
+
+                <div class="avatar">
+                    <div class="imagem">
+                        <img src="assets/imagens/avatar.png" class="img-fluid">
+                    </div>
+                    
+                </div>
+
+                <div class="bio">
+                    <div>
+                        <h2>
+                            Olá! Eu sou Jonathan da Costa
+                        </h2>
+                        <h3>
+                            Formado em Análise e Desenvolvimento de Sistemas e estudante de Sistemas de Informação.
+                        </h3>
+                        <p>
+                            Sou apaixonado por tecnologia e tenho um compromisso contínuo com o aprendizado. 
+                            Meu foco principal é no desenvolvimento frontend, mas também possuo conhecimento em backend.<br><br>
+                            Sou determinado, organizado e trabalho muito bem em equipe. 
+                            Sempre em busca de novos desafios, estou aberto a mudanças e novas oportunidades.<br><br>
+                            Agradeço por visitar meu portfólio! Sinta-se à vontade para explorar meus projetos e entrar em contato.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section><!-- Fim Bio -->
+
+    <section id="skills"><!-- Início Skills -->
+        <h1 class="skills-titulo">Skills</h1>
+    
+        <div class="grid-container">
+
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/html.png" alt="Imagem 1" class="skills-imagem">
+                    <p class="descricao">HTML</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/css.png" alt="Imagem 2" class="skills-imagem">
+                    <p class="descricao">CSS</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/js.png" alt="Imagem 3" class="skills-imagem">
+                    <p class="descricao">JAVASCRIPT</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/bootstrap.png" alt="Imagem 4" class="skills-imagem">
+                    <p class="descricao">Bootstrap</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/angular.png" alt="Imagem 5" class="skills-imagem">
+                    <p class="descricao">Angular</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/java.png" alt="Imagem 6" class="skills-imagem">
+                    <p class="descricao">Java</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/python.png" alt="Imagem 7" class="skills-imagem">
+                    <p class="descricao">Python</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/wordpress.png" alt="Imagem 8" class="skills-imagem">
+                    <p class="descricao">Wordpress</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/skills/mysql.png" alt="Imagem 9" class="skills-imagem">
+                    <p class="descricao">MySQL</p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- Fim Skills -->
+
+    <section id="projetos"><!-- Início Projetos -->
+        <h1 class="projeto-titulo">Projetos</h1>
+
+        <div class="grid-container-projetos">
+
+            <div class="projetos-card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/projetos/Calculadora.jpg" alt="Imagem 1" class="projetos-imagem">
+                </div>
+            </div>
+            <div class="projetos-card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/projetos/mosquito.png" alt="Imagem 1" class="projetos-imagem">
+
+                </div>
+            </div>
+            <div class="projetos-card">
+                <div class="skills-conteudo">
+                    <img src="assets/imagens/projetos/twitter.png" alt="Imagem 1" class="projetos-imagem">
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- Fim Projetos -->
+
+    <section id="rodape">
+        <nav class="navbar navbar-expand-md navbar-light navbar-transparente">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link" id="sobre-mim-link">Sobre mim</a>
+                    </li>
+                    <li class="nav-item divisor"></li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Linguagens</a>
+                    </li>
+                    <li class="nav-item divisor"></li>
+                    <li class="nav-item">
+                        <a href="#projetos" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item divisor"></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link openModalLink">Contatos</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="modal">
+        <!-- Estrutura do Modal -->
+        <div class="modal">
+            <div class="modal-conteudo">
+                <div class="modal-galeria">
+                    <div class="modal-imagem">
+                        <img src="assets/imagens/modal/map.png" alt="Descrição da Imagem 1">
+                        <p>Rio de Janeiro - RJ</p>
+                    </div>
+                    <div class="modal-imagem">
+                        <img src="assets/imagens/modal/email.png" alt="Descrição da Imagem 2">
+                        <p>jonathancs091@gmail.com</p>
+                    </div>
+                    <div class="modal-imagem">
+                        <img src="assets/imagens/modal/whatsapp.png" alt="Descrição da Imagem 3">
+                        <p>(21)99082-0336</p>
+                    </div>
+                    <div class="modal-imagem">
+                        <img src="assets/imagens/modal/linkedin.png" alt="Descrição da Imagem 4">
+                        <p>/in/jonathancs91</p>
+                    </div>
+                    <div class="modal-imagem">
+                        <img src="assets/imagens/modal/github.png" alt="Descrição da Imagem 5">
+                        <p>/jonathancs91</p>
+                    </div>
+                    <div class="modal-imagem">
+                        <a href="assets/docs/curriculo.pdf" target="_blank">
+                            <img src="assets/imagens/modal/curriculo.png" alt="Descrição da Imagem 6">
+                        </a>
+                        <p><a href="assets/docs/curriculo.pdf" target="_blank" class="curriculo-link">Currículo</a></p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
